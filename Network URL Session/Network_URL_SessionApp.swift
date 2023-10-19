@@ -8,10 +8,13 @@
 import SwiftUI
 
 @main
-struct Network_URL_SessionApp: App {
+struct ProjectNameApp: App {
+    var network = Network()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(network)
         }
     }
 }
